@@ -1,0 +1,202 @@
+18:23:00.379 [TestRunner thread] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class calculations.CalculationsTest]
+18:23:00.383 [TestRunner thread] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:23:00.390 [TestRunner thread] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:23:00.415 [TestRunner thread] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [calculations.CalculationsTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+18:23:00.436 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [calculations.CalculationsTest], using SpringBootContextLoader
+18:23:00.439 [TestRunner thread] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [calculations.CalculationsTest]: class path resource [calculations/CalculationsTest-context.xml] does not exist
+18:23:00.439 [TestRunner thread] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [calculations.CalculationsTest]: class path resource [calculations/CalculationsTestContext.groovy] does not exist
+18:23:00.439 [TestRunner thread] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [calculations.CalculationsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:23:00.443 [TestRunner thread] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [calculations.CalculationsTest]: CalculationsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:23:00.543 [TestRunner thread] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\kimmo\Documents\NetBeansProjects\mooc-wepa-2020\osa07-Osa07_05.Calculations\target\classes\calculations\CalculationsApplication.class]
+18:23:00.545 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration calculations.CalculationsApplication for test class calculations.CalculationsTest
+18:23:00.628 [TestRunner thread] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [calculations.CalculationsTest]: using defaults.
+18:23:00.629 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:23:00.645 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@485a2ceb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@47db5171, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@36162675, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@12efb5f0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bcbee32, org.springframework.test.context.transaction.TransactionalTestExecutionListener@168676e3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@11a4cfc8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7e0ba839, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2a6563b4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ff12975, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@389c7dcc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1bf54086]
+18:23:00.647 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [calculations.CalculationsTest]
+18:23:00.647 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [calculations.CalculationsTest]
+18:23:00.648 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [calculations.CalculationsTest]
+18:23:00.648 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [calculations.CalculationsTest]
+18:23:00.651 [TestRunner thread] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5dd32ea3 testClass = CalculationsTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a83bbe0 testClass = CalculationsTest, locations = '{}', classes = '{class calculations.CalculationsApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3deeb11, [ImportsContextCustomizer@1c3dd98e key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1b43d80c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4ff596cd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ca6dbeb], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+18:23:00.652 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [calculations.CalculationsTest]
+18:23:00.652 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [calculations.CalculationsTest]
+18:23:00.677 [TestRunner thread] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2020-06-24 18:23:00.882  INFO 24520 --- [stRunner thread] calculations.CalculationsTest            : Starting CalculationsTest on MSI with PID 24520 (started by kimmo in C:\Users\kimmo\Documents\NetBeansProjects\mooc-wepa-2020\osa07-Osa07_05.Calculations)
+2020-06-24 18:23:00.883  INFO 24520 --- [stRunner thread] calculations.CalculationsTest            : The following profiles are active: test
+2020-06-24 18:23:01.295  INFO 24520 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-24 18:23:01.343  INFO 24520 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 1 repository interfaces.
+2020-06-24 18:23:01.640  INFO 24520 --- [stRunner thread] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$62ceb611] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-24 18:23:01.795  INFO 24520 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-24 18:23:01.917  INFO 24520 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-24 18:23:01.967  INFO 24520 --- [stRunner thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-24 18:23:02.028  INFO 24520 --- [stRunner thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2020-06-24 18:23:02.029  INFO 24520 --- [stRunner thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-06-24 18:23:02.207  INFO 24520 --- [stRunner thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-06-24 18:23:02.809  INFO 24520 --- [stRunner thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: create table calculation (id bigint not null, calculation_result varchar(255), content varchar(255), status varchar(255), primary key (id))
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+2020-06-24 18:23:03.393  INFO 24520 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-24 18:23:04.172  INFO 24520 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-24 18:23:04.214  WARN 24520 --- [stRunner thread] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-24 18:23:04.563  INFO 24520 --- [stRunner thread] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-24 18:23:04.564  INFO 24520 --- [stRunner thread] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-24 18:23:04.575  INFO 24520 --- [stRunner thread] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 11 ms
+2020-06-24 18:23:04.595  INFO 24520 --- [stRunner thread] calculations.CalculationsTest            : Started CalculationsTest in 3.912 seconds (JVM running for 4.522)
+2020-06-24 18:23:04.677  INFO 24520 --- [stRunner thread] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select calculatio0_.id as id1_0_, calculatio0_.calculation_result as calculat2_0_, calculatio0_.content as content3_0_, calculatio0_.status as status4_0_ from calculation calculatio0_
+2020-06-24 18:23:04.798  INFO 24520 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [calculations.CalculationsTest], using SpringBootContextLoader
+2020-06-24 18:23:04.798  INFO 24520 --- [stRunner thread] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [calculations.CalculationsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-06-24 18:23:04.798  INFO 24520 --- [stRunner thread] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [calculations.CalculationsTest]: CalculationsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-06-24 18:23:04.799  INFO 24520 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration calculations.CalculationsApplication for test class calculations.CalculationsTest
+2020-06-24 18:23:04.800  INFO 24520 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-06-24 18:23:04.800  INFO 24520 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@62475710, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7072cfc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@72344bb8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@704ebcb2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@28e98a7c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@16373351, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@468ed3a4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@43a04ceb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@27fe9489, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@8fc969c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@385f77d4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79d9b320]
+Hibernate: select calculatio0_.id as id1_0_, calculatio0_.calculation_result as calculat2_0_, calculatio0_.content as content3_0_, calculatio0_.status as status4_0_ from calculation calculatio0_
+2020-06-24 18:23:04.821  INFO 24520 --- [       Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-24 18:23:04.822  INFO 24520 --- [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-24 18:23:04.828  INFO 24520 --- [       Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2020-06-24 18:23:04.829  INFO 24520 --- [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-24 18:23:04.831 ERROR 24520 --- [         task-1] o.s.t.i.TransactionInterceptor           : Application exception overridden by rollback exception
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:602) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:340) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:168) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:150) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135) ~[spring-data-jpa-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at calculations.CalculationService.process(CalculationService.java:32) ~[classes/:na]
+	at calculations.CalculationService$$FastClassBySpringCGLIB$$74a53570.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_221]
+
+2020-06-24 18:23:04.832 ERROR 24520 --- [         task-2] o.s.t.i.TransactionInterceptor           : Application exception overridden by rollback exception
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:602) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:340) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:168) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:150) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135) ~[spring-data-jpa-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at calculations.CalculationService.process(CalculationService.java:32) ~[classes/:na]
+	at calculations.CalculationService$$FastClassBySpringCGLIB$$74a53570.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_221]
+
+2020-06-24 18:23:04.833 ERROR 24520 --- [         task-1] .a.i.SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void calculations.CalculationService.process(calculations.Calculation)
+
+org.springframework.transaction.TransactionSystemException: Could not roll back JPA transaction; nested exception is org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:563) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:838) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:812) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:551) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:298) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_221]
+Caused by: org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:122) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:294) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:139) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:559) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 11 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.message.DbException.get(DbException.java:179) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.message.DbException.get(DbException.java:155) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.message.DbException.get(DbException.java:144) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1526) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.jdbc.JdbcConnection.checkClosedForWrite(JdbcConnection.java:1512) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.jdbc.JdbcConnection.rollback(JdbcConnection.java:516) ~[h2-1.4.197.jar:1.4.197]
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:370) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:116) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	... 14 common frames omitted
+
+2020-06-24 18:23:04.833 ERROR 24520 --- [         task-2] .a.i.SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void calculations.CalculationService.process(calculations.Calculation)
+
+org.springframework.transaction.TransactionSystemException: Could not roll back JPA transaction; nested exception is org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:563) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:838) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:812) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:551) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:298) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_221]
+Caused by: org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:122) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:294) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:139) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:559) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 11 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.message.DbException.get(DbException.java:179) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.message.DbException.get(DbException.java:155) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.message.DbException.get(DbException.java:144) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1526) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.jdbc.JdbcConnection.checkClosedForWrite(JdbcConnection.java:1512) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.jdbc.JdbcConnection.rollback(JdbcConnection.java:516) ~[h2-1.4.197.jar:1.4.197]
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:370) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:116) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	... 14 common frames omitted
+
+2020-06-24 18:23:05.081  INFO 24520 --- [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:include="fragments/layout :: head"> 
+        <title id="pageTitle" th:title="${userProfile.username}"></title>
+    </head>
+    <body>
+        <div style="margin-left:340px;margin-right:40px">
+            <h1>Kytketty sisään</h1>
+            <p>Kytketty sisään is a fake networking site where people can find home based work in the difficult environment of covid19. Also it is a school project for my web development class.</p>
+            <h2>Features: </h2>
+            <p><b>Profile:</b> Here you can see your personal profile, including your name, skills and profile picture</p>
+            <p><b>Message board: </b> Here you can communicate with other people by posting and commenting on messages</p>
+            <p><b>Friends: </b> Here you can see list of your friends and access their profiles. You can also add or remove friends here</p>
+            <p><b>Images: </b> Upload your profile pic here.</p>
+            <p><b>Skills: </b> Add skills to your profile here.</p>
+            <h2>Contact admin: </h2>
+            <p>If you want to give me personal feedback on the site or offer me a job in web develpment, contact me at: </p>
+            <p>kimmo.polojarvi(at)gmail.com</p>
+        </div>
+        <nav th:replace="fragments/layout :: navbar"></nav>
+        <script th:src="@{/js/navbar.js}"></script>
+    </body>
+</html>

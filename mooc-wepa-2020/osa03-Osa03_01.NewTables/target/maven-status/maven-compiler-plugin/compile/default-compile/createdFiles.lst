@@ -1,0 +1,7 @@
+newtables\NewTablesApplication.class
+newtables\Student.class
+newtables\CourseController.class
+newtables\CourseRepository.class
+newtables\StudentController.class
+newtables\Course.class
+newtables\StudentRepository.class

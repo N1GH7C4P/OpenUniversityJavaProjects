@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: hellopaths.HelloPathsTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.963 s <<< FAILURE! - in hellopaths.HelloPathsTest
+pathsTest(hellopaths.HelloPathsTest)  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: Response content expected:<Paths> but was:<>
+	at hellopaths.HelloPathsTest.pathsTest(HelloPathsTest.java:34)
+
+helloTest(hellopaths.HelloPathsTest)  Time elapsed: 0.025 s  <<< FAILURE!
+java.lang.AssertionError: Response content expected:<Hello> but was:<>
+	at hellopaths.HelloPathsTest.helloTest(HelloPathsTest.java:28)
+

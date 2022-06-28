@@ -1,0 +1,6 @@
+
+BUILD FAILED
+/home/nightcap/NetBeansProjects/mooc-tira-s19/viikko07-Viikko07Tehtava5/nbproject/build-impl.xml:930: The following error occurred while executing this line:
+/home/nightcap/NetBeansProjects/mooc-tira-s19/viikko07-Viikko07Tehtava5/nbproject/build-impl.xml:270: Compile failed; see the compiler error output for details.
+
+Total time: 1 second

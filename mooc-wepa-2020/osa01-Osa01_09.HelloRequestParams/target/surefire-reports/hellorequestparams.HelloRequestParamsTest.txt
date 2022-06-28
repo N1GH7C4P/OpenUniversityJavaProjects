@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: hellorequestparams.HelloRequestParamsTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 3.566 s <<< FAILURE! - in hellorequestparams.HelloRequestParamsTest
+singleParamTest(hellorequestparams.HelloRequestParamsTest)  Time elapsed: 0.265 s  <<< FAILURE!
+java.lang.AssertionError: Response content expected:<Hello value> but was:<>
+	at hellorequestparams.HelloRequestParamsTest.singleParamTest(HelloRequestParamsTest.java:30)
+
+singleParamTest2(hellorequestparams.HelloRequestParamsTest)  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.AssertionError: Response content expected:<Hello test> but was:<>
+	at hellorequestparams.HelloRequestParamsTest.singleParamTest2(HelloRequestParamsTest.java:36)
+
+multiParamsTest(hellorequestparams.HelloRequestParamsTest)  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.AssertionError: 
+Response content
+Expected: a string containing "aaa"
+     but: was ""
+	at hellorequestparams.HelloRequestParamsTest.multiParamsTest(HelloRequestParamsTest.java:42)
+
+multiParamsTest2(hellorequestparams.HelloRequestParamsTest)  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.AssertionError: 
+Response content
+Expected: a string containing "x"
+     but: was ""
+	at hellorequestparams.HelloRequestParamsTest.multiParamsTest2(HelloRequestParamsTest.java:52)
+

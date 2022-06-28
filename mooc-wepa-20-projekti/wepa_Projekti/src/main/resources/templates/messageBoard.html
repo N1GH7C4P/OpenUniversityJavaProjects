@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
+    <head th:include="fragments/layout :: head"> 
+        <title id="pageTitle">le Linked In Message Board</title>
+    </head>
+    <body>
+        <nav th:replace="fragments/layout :: navbar"></nav>
+        <script th:src="@{/static/js/navbar.js}"></script>
+        <div th:replace="fragments/layout :: messageLayout"> </div>
+    </body>
+</html>

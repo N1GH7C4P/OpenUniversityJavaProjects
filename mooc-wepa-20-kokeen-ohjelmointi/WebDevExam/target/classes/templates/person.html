@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <title>People app</title>
+    </head>
+    <body>
+        <span th:text="${person.name}"> Name </span>
+        <span th:text="${person.surname}"> Surname </span>
+        
+        <h1>Add new Present</h1>
+        
+        <form action="#" th:action="@{/presents(id=${person.id})}" th:object="${present}" method="POST">
+            <div>
+                <input type="text" th:field="*{name}" placeholder="name" />
+                <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}">name error></p>
+            </div>
+            <button type="submit">Add present</button>
+        </form>
+    </body>
+</html>

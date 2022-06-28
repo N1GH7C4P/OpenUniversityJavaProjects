@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <title>Layout</title>
+    </head>
+    <body>
+        <div th:fragment="header">
+            <header>
+            <a th:href="@{/index}">Main page</a> | 
+            <a th:href="@{/list}">List</a> |
+            <a th:href="@{/form}">Form</a>
+            </header>
+        </div>
+        
+        <div th:fragment="section">
+            <section>
+            <h1>Super site!</h1>
+            <p>Super site is one of the best sites on the internet now!</p>
+            </section>
+        <div/>
+        
+        <div th:fragment="main">
+            <main>
+                <p>What site would you want to see listed?</p>
+            </main>
+        </div>
+    </body>
+</html>

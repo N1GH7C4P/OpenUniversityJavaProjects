@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+    <head th:include="fragments/layout :: head"> 
+        <title id="pageTitle">le Linked In Message Board</title>
+    </head>
+    <body>
+        
+        <nav th:replace="fragments/layout :: navbar"></nav>
+        <script th:src="@{/js/navbar.js}"></script>
+        
+        <div style="margin-left:340px;margin-right:40px">
+            <input th:type="text" th:id="myInput" value="Search by your friends name" th:onkeyup="'javascript:myFunction()'"/>
+             <table id="myTable">
+              <tr class="header">
+                <td style="width:30%;">Name</td>
+                <td style="width:30%;">Username</td>
+                <td style="width:30%;">Add to friends</td>
+              </tr>
+              <tr th:each="user : ${users}">
+                <td th:text="${user.name}"></td>
+                <td th:text="${user.username}"></td>
+                <td><a th:href="'/addfriend/'+${user.username}">Add</a></td>
+              </tr>
+            </table>
+        </div>
+        
+        <script>
+            function myFunction() {
+              // Declare variables
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+
+              // Loop through all table rows, and hide those who don't match the search query
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+        </script>
+    </body>
+</html>

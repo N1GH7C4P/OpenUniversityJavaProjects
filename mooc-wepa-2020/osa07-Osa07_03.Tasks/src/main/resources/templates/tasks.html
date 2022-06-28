@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" >    
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <title>Tasks</title>
+    </head>
+    <body>
+
+        <h2>Tasks</h2>
+        
+        <h2>Post a new task</h2>
+        
+        <input type="text" id="tekstikentta"/>
+        <button onclick="Post()">Add a task</button>
+        <p id="received"></p>
+        
+        <script th:inline="javascript"> var contextRoot = /*[[@{/}]]*/ '';</script>
+        <script th:src="@{/javascript/tasks.js}"></script>
+    </body>
+</html>

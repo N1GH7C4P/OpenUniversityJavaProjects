@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:include="fragments/layout :: head"> 
+        <title id="pageTitle">Profile pic</title>
+    </head>
+    <body>
+        
+        <nav th:replace="fragments/layout :: navbar"></nav>
+        <script th:src="@{/js/navbar.js}"></script>
+        
+        <div style="margin-left:340px;margin-right:40px">
+            <h2>Upload a profile picture</h2>>
+            <p>The image should be around 128 - 256 pixels wide and in .gif format.</p>
+
+            <form method="POST" th:action="@{/images}" enctype="multipart/form-data">
+                <input type="file" name="file" id="file"/>
+                <input type="submit" value="Add!"/>
+            </form>
+        </div>
+    </body>
+</html>

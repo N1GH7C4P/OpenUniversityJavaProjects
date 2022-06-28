@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:include="fragments/layout :: head"> 
+        <title id="pageTitle" th:title="${userProfile.username}"></title>
+    </head>
+
+    <body>
+        <div style="margin-left:340px;margin-right:40px">
+            <h1 th:text="${userProfile.username}"></h1>
+            <img th:src="${userProfile.hasProfilePic} ? '/images/'+${userProfile.username}+'/profilepic' : '\img\default.gif'" width="128"></img>
+            <p th:text="${'Name: '+userProfile.name}"></p>
+            <h2>Top skills</h2>
+            <table>
+                <tr th:each="skill : ${skills}">
+                    <td>
+                        <span th:text="${skill.name}"> </span>
+                        <span th:text="${skill.likes}"> </span>
+                        <a th:href="'/likeSkill/'+${skill.name}" th:text='like'></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <nav th:replace="fragments/layout :: navbar"></nav>
+        <script th:src="@{/js/navbar.js}"></script>
+        
+    </body>
+</html>

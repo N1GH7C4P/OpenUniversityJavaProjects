@@ -1,0 +1,9 @@
+2020-04-22 15:54:44 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELCT[*] * FROM TASKS"; expected "SELECT, SET, SAVEPOINT, SCRIPT, SHUTDOWN, SHOW, {"; SQL statement:
+SELCT * FROM TASKS [42001-197]
+2020-04-22 15:54:59 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELCT[*](*) FROM TASK"; expected "SELECT, SET, SAVEPOINT, SCRIPT, SHUTDOWN, SHOW, {"; SQL statement:
+SELCT(*) FROM TASK [42001-197]
+2020-04-22 15:55:07 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT(*[*]) FROM TASK"; expected "), NOT, EXISTS, INTERSECTS, SELECT, FROM, WITH"; SQL statement:
+SELECT(*) FROM TASK [42001-197]

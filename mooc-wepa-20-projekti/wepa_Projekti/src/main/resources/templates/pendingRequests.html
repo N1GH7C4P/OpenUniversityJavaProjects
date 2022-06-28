@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:include="fragments/layout :: head"> 
+        <title id="pageTitle">Pending</title>
+    </head>
+    
+    <body>
+        
+        <nav th:replace="fragments/layout :: navbar"></nav>
+        <script th:src="@{/js/navbar.js}"></script>
+        
+        <div style="margin-left:340px;margin-right:40px">
+            <h2>Incoming friend requests:</h2>      
+            <table>
+                <tbody>
+                    <tr th:each="request : ${pending}">
+                        <td>
+                            <form action="#" th:action="@{/handleRequest/(sender=${request.sender})}" th:object="${request}" method="POST"}>
+                                <span th:text="${request.sender}"></span>
+                                <button type="submit" th:name="action" th:value="accept">Accept</button>
+                                <button type="submit" th:name="action" th:value="decline">Decline</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="/friends"> Back</a>
+        </div>
+    </body>
+</html>

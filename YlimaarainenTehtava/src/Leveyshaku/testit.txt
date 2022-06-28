@@ -1,0 +1,26 @@
+Tehtävänanto:
+
+Korvaava tehtäväsi on toteuttaa toimiva leveyshaku ja
+tutkia, kuinka nopeasti se laskee etäisyydet alkusolmusta muihin
+solmuihin suuressa satunnaisesti luodussa verkossa. Lähetä minulle
+käyttämäsi koodi sekä saamasi tulokset.
+
+Testiaineisto:
+
+Luodaan verkko jossa on 10000 solmua ja jokaisesta solmusta on 50000 kaarta satunnaisiin muihin solmuihin.
+Ohjelmalla tutkittiin kuinka kauan leveyshaulla kestää löytää polut Aloitussolmusta jokaiseen muuhun solmuun.
+Ajat ja polut kirjattiin muistiin ja niistä laskettiin keskimääräisn polun pituus ja sen löytämiseen kulunut aika.
+
+Tulokset:
+
+Aikojen keskiarvo: 318.50024953703763 ms
+Polkujen pituuksien keskiarvo: 6.036231884057971
+Aika yhteensä: BUILD SUCCESSFUL (total time: 52 minutes 52 seconds)
+
+Analyysi:
+
+- Aikojen keskiarvo näyttää poikkeavan havaituista ajoista, jotka pyörivät 140 - 180 ms hujakoilla.
+- Nopeudet tuntuivat hidastuvan hieman ajon edetessä.
+- Poikkeama saattaa johtua siitä että läppärini meni sleep -tilaan muutaman kerran ajon aikana.
+
+Löydät ohjelman tuottaman datan Output.txt -tiedostosta.

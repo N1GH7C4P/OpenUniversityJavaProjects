@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
+        <title th:include=":: #pageTitle">Layout Generic Title </title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+
+            #myInput {
+              background-image: url('/css/searchicon.png');
+              background-position: 10px 10px;
+              background-repeat: no-repeat;
+              width: 100%;
+              font-size: 16px;
+              padding: 12px 20px 12px 40px;
+              border: 1px solid #ddd;
+              margin-bottom: 12px;
+            }
+
+            #myTable {
+              border-collapse: collapse;
+              width: 100%;
+              border: 1px solid #ddd;
+              font-size: 18px;
+            }
+
+            #myTable th, #myTable td {
+              text-align: left;
+              padding: 12px;
+            }
+
+            #myTable tr {
+              border-bottom: 1px solid #ddd;
+            }
+
+            #myTable tr.header, #myTable tr:hover {
+              background-color: #f1f1f1;
+            }
+        </style>
+    </head>
+    <body>
+        <nav th:fragment="navbar" class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+            
+            <div class="w3-bar-block">
+                <h2 class="w3-bar-item w3-button w3-hover-white"><b>Kytketty sisään</b></h2>
+                <a href="/index" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+                <a href="/profile" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Profile</a> 
+                <a href="/messageBoard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Message board</a> 
+                <a href="/friends" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Friends</a> 
+                <a href="/images" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Images</a> 
+                <a href="/skills" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skills</a>
+                <a href="/logout" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Logout</a>
+                <br></br>
+                <img src="../img/kytkettySisaan.jpg" width="256"/>
+            </div>
+        </nav>
+        
+        <div th:fragment="messageLayout" class="w3-main" style="margin-left:340px;margin-right:40px">
+        <h1>Message board</h1>
+        
+            <strong>Post a new message!</strong>
+        
+            <form action="#" th:action="@{/messageBoard}" th:object="${message}" method="POST">
+                <input type="text" th:field="*{content}" />
+
+                <textarea th:if="${#fields.hasErrors('content')}" th:errors="*{content}"  rows="2">message Virheviesti</textarea>
+                
+                <button class="button3" type="submit">Post!</button>
+            </form>
+            
+            <br> </br>
+        
+            <th:block th:each="message : ${messages}">
+                    <div class="row">
+                        <div class="col1">         
+                            <img th:src="${message.sender.hasProfilePic} ? '/images/'+${message.sender.username}+'/profilepic' : '\img\default.gif'" width="64"></img>
+                        </div>
+                        <div class="col6">
+                            <p th:text="${message.sender.username}+' '+${message.time}"> </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col6">
+                            <p th:text="${message.content}"> </p>
+                            <span th:text="'Likes: '+${message.likes} "></span> <a th:href="'/messageBoard/'+${message.id}+'/like'" th:text="Like"></a>
+                        </div>
+                    </div>
+    
+                <div class="row">
+                    <strong>Comments:</strong>
+                </div>
+                    
+                <th:block th:each="comment: ${message.comments}">
+                    <div class="row">
+                        <p th:text="${comment.sender.username }+' '+${comment.time}"></p>
+                    </div>
+                    <div class="row">
+                        <div class="col6">
+                            <img th:src="${comment.sender.hasProfilePic} ? '/images/'+${comment.sender.username}+'/profilepic' : '\img\default.gif'" width="32"></img>
+                            <p th:text="${comment.content}"></p>
+                        </div>
+                    </div>
+                </th:block>
+
+                <strong>Add a new comment!</strong>
+
+                <form action="#" th:action="@{'/messageBoard/'+${message.Id}+'/addComment'}" th:object="${comment}" method="POST">
+                    <input type="text" th:field="*{content}" />
+                    <textarea th:if="${#fields.hasErrors('content')}" th:errors="*{content}" width="50%" rows="2">message Virheviesti</textarea>
+                    <button class="button3" type="submit">Comment!</button>              
+                </form>
+                <br> </br>         
+            </th:block>    
+        </div>
+    </body>
+</html>

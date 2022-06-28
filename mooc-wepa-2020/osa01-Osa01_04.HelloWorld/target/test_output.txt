@@ -1,0 +1,1 @@
+[{"className":"helloworld.HelloWorldTest","methodName":"helloWorldTest","pointNames":["01-04"],"status":"PASSED"},{"className":"helloworld.HelloWorldTest","methodName":"helloWorldAnyUrlTest","pointNames":["01-04"],"status":"PASSED"}]

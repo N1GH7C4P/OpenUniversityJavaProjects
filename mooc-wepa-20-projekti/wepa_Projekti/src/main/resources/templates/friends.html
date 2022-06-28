@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
+    <head th:include="fragments/layout :: head"> 
+        <title id="pageTitle">Friends</title>
+    </head>
+    
+    <body>
+        <nav th:replace="fragments/layout :: navbar"></nav>
+        <script th:src="@{/js/navbar.js}"></script>
+        
+        <div style="margin-left:340px;margin-right:40px">
+        
+            <h1>Your friends</h1>
+
+            <div>
+                <table>
+                    <tbody>
+                        <tr th:each="friend : ${friends}">
+                            <td>
+                                <div>
+                                <img th:src="${friend.hasProfilePic} ? '/images/'+${friend.username}+'/profilepic' : '\img\default.gif'" width="32"></img>
+                                <p th:text="${friend.username}"> </p>
+                                </div>
+                                <div>
+                                    <a th:href="'/profile/' + ${friend.username}">Show profile</a>
+                                    <a th:href="'/remove/' + ${friend.username}">Remove friend</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br></br>
+            <a href="/addfriend"> Add new friends.</a>
+            <a href="/pending" > Incoming friend requests</a>
+        </div>
+    </body>
+</html>
